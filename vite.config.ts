@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./index.html", // относительный путь вместо "/todo-list/"
+  base: "/", // Changed from "./index.html" to proper base path
   plugins: [react()],
   resolve: {
     alias: {
