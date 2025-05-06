@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found</title>
+    <script>
+      // Redirect to the homepage with the full path
+      const pathSegmentsToKeep = 1;
+      const redirectUrl =
+        window.location.pathname
+          .split("/")
+          .slice(0, pathSegmentsToKeep + 1)
+          .join("/") + "/";
+
+      window.location.replace(redirectUrl);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to homepage...</p>
+  </body>
+</html>
