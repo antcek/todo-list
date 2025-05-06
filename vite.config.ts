@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/todo-list/", // base path for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
