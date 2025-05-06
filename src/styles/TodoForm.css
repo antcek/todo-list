@@ -1,0 +1,33 @@
+.todo-form {
+  display: flex;
+  margin-bottom: 1.5rem;
+  gap: 0.5rem;
+}
+
+.todo-input {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.todo-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.add-button {
+  background-color: var(--secondary-color);
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  color: white;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.add-button:hover {
+  background-color: #27ae60;
+}
